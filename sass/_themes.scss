@@ -1,0 +1,126 @@
+.main-top-car-1 {
+    background: url(../img/main-top-banner-1.png) center center / cover;
+}
+.main-top-car-2 {
+    background: url('../img/main-top-banner-2.png') center center / cover;
+}
+.main-top-car-3 {
+    background: url('../img/main-top-banner-3.png') center center / cover;
+}
+.main-top-car-4 {
+    background: url('../img/main-top-banner-4.png') center center / cover;
+}
+.main-top-car-5 {
+    background: url('../img/main-top-banner-5.png') center center / cover;
+}
+.take-rate-sect {
+    background: url('../img/take-rate.png') $centbg;
+}
+.left-content {
+    .chess-content-wp {
+        background-position: right center;
+    }
+}
+.chess-content-wp {
+    background-repeat: no-repeat;
+}
+.right-content {
+    .chess-content-wp {
+        background-position: left center;
+    }
+}
+.work-groups {
+    background-color: #424850;
+}
+.white-left-corner {
+    background-image: url('../img/themes/bg-white-left-corner.png');
+}
+.grey-right-corner {
+    background-image: url('../img/themes/bg-grey-right-corner.png');
+}
+.grey-left-corner {
+    background-image: url('../img/themes/bg-grey-left-corner.png');
+}
+.darken-white-left-corner {
+    background-image: url('../img/themes/bg-darken-white-left-corner.png');
+}
+.darken-white-right-corner {
+    background-image: url('../img/themes/bg-darken-white-right-corner.png');
+}
+.white-right-corner {
+    background-image: url('../img/themes/bg-white-right-corner.png');
+}
+.grey-left-corner {
+    background-image: url('../img/themes/bg-grey-left-corner.png');
+}
+.darken-white {
+    background-color: #f9fafa;
+}
+.top-banner {
+    background: $centbg;
+}
+.languages-page .top-banner {
+    background-image: url('../img/themes/lang-banner.png');
+}
+.services-page .top-banner {
+    background-image: url('../img/themes/servcies-banner.png')
+}
+.about-service-page .top-banner {
+    background-image: url('../img/themes/about-service-banner.png');
+}
+.about-service-blog-page .top-banner {
+    background-image: url('../img/themes/about-service-blog-banner.png');
+}
+.cooperation-page .top-banner {
+    background-image: url('../img/themes/cooperation-banner.png');
+}
+.specializations-page .top-banner {
+    background-image: url('../img/themes/specialization-banner.png');
+}
+.answer-question-page .top-banner {
+    background-image: url('../img/themes/answer-question.png');
+}
+.comments-page .top-banner {
+    background-image: url(../img/themes/comments.png);
+}
+.answer, .leave-comment {
+    background: url('../img/answer.png') $centbg;
+}
+.grey-bg {
+    background-color: #414850;
+}
+.price {
+    background-color: #f9fafa;
+}
+.contact-us {
+    background: url('../img/themes/contacts-us.png') $centbg;
+}
+.order-lesson {
+    background: url('../img/themes/order-test-lesson.png') $centbg;
+}
+.additional-services {
+  @extend .darken-white;
+}
+.special-offer-page .top-banner {
+  background-image: url('../img/themes/special-offer.png');
+}
+.contacts-page {
+  .top-banner {
+    background-image: url('../img/themes/contacts.png');
+  }
+  .subscribe {
+    background-image: url('../img/themes/subscribe-white-bg.png');
+  }
+}
+.about-cooperation {
+  background: url('../img/themes/about-cooperation.png') $centbg;
+}
+.standart-translate {
+  background: url('../img/themes/translate-standart.png') $centbg;
+}
+.apostil {
+  background-color: #f9fafa;
+}
+.cost-additional-services {
+  background: url('../img/themes/additional-service.png') $centbg;  
+}

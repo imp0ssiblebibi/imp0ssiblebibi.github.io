@@ -1,0 +1,59 @@
+@media (max-width: 768px) {
+    html {
+        font-size: 13px;
+    }
+    .how-work-item {
+        max-width: 100%;
+    }
+    .about-us {
+        background: #f9fafa;
+        .heading-grey {
+            text-align: center;
+        }
+        .blue-hr {
+            margin-left: auto;
+        }
+        &-detail {
+            text-align: center;
+        }
+    }
+    .about-us-main-wp {
+        width: 100%;
+    }
+    .post-preview {
+        flex-wrap: wrap;
+    }
+    .comments-page {
+        .comment-content {
+            padding-left: 0;
+            padding-top: 130px;
+        }
+        .item {
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+    }
+    .special-offer {
+      flex-wrap: wrap;
+      > div {
+        width: 100%;
+      }
+      .content-block {
+        &:after {
+          @include transform( translate(50%, 50%) rotate(90deg) );
+          right: 50%;
+          top: auto;
+          bottom: -24px;
+          background: transparent url('../img/themes/white-corner.png') $centbg ;
+        }
+      }
+      .picture-block  {
+        > img {
+          width: 100%;
+          height: 100%;
+          display: block;
+        }
+      }
+
+    }
+}

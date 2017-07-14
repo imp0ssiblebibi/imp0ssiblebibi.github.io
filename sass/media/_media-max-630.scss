@@ -1,0 +1,71 @@
+
+@media (max-width: 630px) {
+    .contacts {
+        .wrapper-big {
+            > div {
+                width: 100%;
+                max-width: 100%;
+            }
+        }
+        &-description {
+            padding-right: 30px;
+            text-align: center;
+        }
+    }
+    .chess-img-wp {
+        display: none;
+    }
+    .chess-content-wp {
+    }
+    .right-content {
+        .chess-content-wp {
+            padding: 60px 30px;
+            width: 100%;
+        }
+    }
+    .left-content {
+        .chess-content-wp {
+            padding: 60px 30px;
+            width: 100%;
+        }
+    }
+    .our-advances-main {
+        margin-bottom: 0;
+    }
+    .article-single {
+        .comment-avatar-wp {
+
+        }
+        .comment-content {
+            padding-top: 8.125rem;
+            padding-left: 1.1875rem;
+        }
+        .comment-level {
+            padding-left: (50rem/16);
+        }
+        .post-leave-comment {
+            .row {
+                margin: 0;
+            }
+            .input {
+                width: 100%;
+                margin-right: 0;
+                margin-left: 0;
+            }
+        }
+    }
+    .comments-page {
+        .result-figure {
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .comment-rate {
+            padding-left: 0;
+        }
+    }
+    .directions {
+      .item {
+        width: 100%;
+      }
+    }
+}

@@ -1,0 +1,78 @@
+
+@media (max-width: 1199px) {
+    .our-advances-wp {
+        background: #fff;
+    }
+    .our-advances-left {
+        width: 100%;
+    }
+    .our-advances-main {
+        float: none;
+        max-width: 705px;
+        width: 100%;
+        margin: 0 auto;
+        padding-right: 0;
+        margin-bottom: -(55rem/16);
+    }
+    .how-work-item {
+        max-width: 50%;
+    }
+    .how-work-main {
+        flex-wrap: wrap;
+    }
+    .how-work-item-2 {
+        .how-work-item-2-1 p {
+            &:before {
+                display: none;
+            }
+            &:after {
+                display: none;
+            }
+        }
+    }
+    .about-us-main-wp {
+        padding-left: 20px;
+    }
+    .contacts {
+        background-color: #393a3b;
+        background-image: none;
+        .wrapper-big {
+            flex-wrap: wrap;
+            > div {
+                width: 50%;
+                max-width: 50%;
+            }
+        }
+    }
+    .bottom-block {
+        max-width: 100%;
+        text-align: center;
+    }
+    .bottom-social-block {
+        position: static;
+    }
+    .all-rights {
+        left: 0;
+        right: 0;
+        text-align: center;
+    }
+    .work-groups {
+        .chess-content-wp {
+            padding-right: (125rem/16);
+        }
+    }
+    .our-advances {
+        .chess-img-wp {
+            display: none;
+        }
+        .chess-content-wp {
+            width: 100%;
+            padding-left: 30px;    
+        }
+        .chess-main {
+            float: none;
+            margin-right: auto;
+            margin-left: auto;
+        }
+    }
+}
