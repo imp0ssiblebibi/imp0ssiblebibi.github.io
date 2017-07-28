@@ -19,15 +19,8 @@ $(document).ready(function(){
         navigation	: true,
         navigationText : ['<span class="spec-arrow-left  spec-arrow" aria-hidden="true"><span>', '<span class="spec-arrow-right  spec-arrow" aria-hidden="true"></span>']
     });
-    $('#comments-carousel').owlCarousel({
+    $('.comments-carousel').owlCarousel({
         singleItem : true,
-        navigation	: true,
-        navigationText : ['<span class="spec-arrow-left  spec-arrow" aria-hidden="true"><span>', '<span class="spec-arrow-right  spec-arrow" aria-hidden="true"></span>']
-    });
-    $('#lookmore-carousel').owlCarousel({
-        itemsCustom : [ [0, 1],
-                        [904, 2],
-                        [1296, 3] ],
         navigation	: true,
         navigationText : ['<span class="spec-arrow-left  spec-arrow" aria-hidden="true"><span>', '<span class="spec-arrow-right  spec-arrow" aria-hidden="true"></span>']
     });
@@ -42,60 +35,84 @@ $(document).ready(function(){
         navigation	: true,
         navigationText : ['<span class="spec-arrow-left  spec-arrow" aria-hidden="true"><span>', '<span class="spec-arrow-right  spec-arrow" aria-hidden="true"></span>']
     });
-
-
-
     var fileSelect = $(".rate-file-input");
     var rateSelect = $('select.rate-element');
     setTimeout(function() {
         fileSelect.styler();
         rateSelect.styler();
     }, 100);
-    $('.jq-selectbox__dropdown ul').jScrollPane();
-//    function initMap() {
-//        map = new google.maps.Map(document.getElementById('map'), {
-//            center : {
-//                lat: 50.445382,
-//                lng: 30.505490
-//            },
-//            zoom: 8
-//        });
-//    }
+    $('#nav-menu > li, .has-dropdown').hover(function(){
+       $(this).children('.dropdown-menu').slideToggle('300');
+    });
+    $('.questions .switch').click( function() {
+      $(this).parent().siblings('.inside').slideToggle('300');
+    } );
+    // $('.up').click(function(event) {
+    //   event.preventDefault();
+    //   while(window.pageYOffset != 0) {
+    //     window.scrollBy(0, -10);
+    //   }
+    // } );
+    $("#slider").slider({
+        min: 0,
+        max: 10,
+        value: 8.6,
+        range: "min",
+        step: 0.1,
+        animate: "normal",
+        orientation: "horizontal",
+        slide: function(event, ui) {
+          $("#total").val($(this).slider("value"));
+          var a = $('#slider').slider("value");
+          $('#total').attr('value', a);
+        },
+        stop: function(event, ui) {
+          $("#total").val($(this).slider("value"));
+          var a = $('#slider').slider("value");
+          $('#total').attr('value', a);
+        }
+    });
+    $('#total').change( function() {
+      var value = $('#total').val();
+      console.log(value);
+      var valueArr = value.split('');
 
-    $('.has-dropdown').hover( function() {
-        $(this).children('.dropdown-menu').slideToggle(300);
-    },  );
+      // verify and customize if it needs
+      for (var i = 0; i < valueArr.length; i++) {
+        var a = valueArr[i];
+        if (a == ',' || a == '.') {
+          valueArr[i] = '.';
+          valueArr.length = i+2;
+          break;
+        };
+        if (isNaN(a) || (a == ' ')) {
+          valueArr.splice(i, 1);
+          i--;
+        }
+      }
+      value = valueArr.join('');
 
-    $('#nav-menu > li').hover( function() {
-        $(this).find('.dropdown-menu').slideToggle(300);
+      if ( value > 10 ) { value = 10};
+      if( value < 0 ) { value = 0};
+      console.log(value);
+      $('#slider').slider("value", value);
+      $('#total').attr('value', value);
+      $('#total').val(value);
+    } );
+
+    $('#range-cont').click(function() {
+      $(this).find('.dropped-range-wp').fadeToggle('100');
     });
 
-
-    // var inc = $("#including");
-
-    // var incChildren = $(inc).children();
-
-    // var incChildrenSingle = incChildren[0];
-
-    // var incChildrenWidth = $(incChildrenSingle).css('width');
-    // var incChildrenInnerWidth = $(incChildrenSingle).innerWidth();
-    // var incChildrenOuterWidth = $(incChildrenSingle).outerWidth();
-
-    // console.log( inc );
-    // console.log( incChildren );
-    // console.log( incChildrenWidth );
-    // console.log( incChildrenInnerWidth );
-    // console.log( incChildrenOuterWidth );
-
-
-
-
-
-
-
-
-
 });
+
+
+
+
+
+
+
+
 
 
    function bar(form, action) {
@@ -109,26 +126,6 @@ $(document).ready(function(){
         }
     }
     var g = 21;
-
-//    bar(1);
-//    bar(2, 3);
-    var range = $('#range');
-    range.oninput = function () {
-        alert(1);
-    };
-    //contextmenu
-
-
-
-
-//    function handler() {
-//   alert( 'Спасибо!' );
-// }
-//     var cub = document.getElementById('range');
-//     cub.addEventListener("input", function () { alert(10) }  );
-
-
-
 
 var print = console.log;
 
@@ -168,15 +165,6 @@ print(arr);
         }
     print(maxNum);
     }
-
-
-
-
-
-
-
-
-
 
 // end counting time and pring
 time = performance.now() - time;
@@ -233,7 +221,6 @@ function digPow(n, p) {
 
 }
 digPow(46288 , 3);
-console.log('\n\n\n\n');
 
 
 function disemvowel(str) {
@@ -252,3 +239,78 @@ function disemvowel(str) {
 }
 
 console.log( disemvowel('абракадабра') );
+console.log('\n\n\n\n');
+console.log(1);
+var mm = [1, 2, 3, 4, 5, 6, 7];
+mm.splice(0, 1);
+mm.splice(-1, 1);
+console.log(mm)
+
+function removeChar(str) {
+ //You got this!
+
+ b = str.split('');
+ b.splice(0, 1);
+ b.splice(-1, 1);
+ return b.join('');
+};
+console.log( removeChar('абракадбра') );
+
+
+function positiveSum(arr) {
+  var sum = 0;
+  for (var i = 0; i < arr.length; i++ ) {
+    if(arr[i] < 0) {
+      arr.splice(i, 1);
+      i--;
+      console.log(arr.length);
+    } else {
+      sum += arr[i];
+    }
+  }
+  return sum;
+}
+console.log( positiveSum([1, 2, -1, -6, -7]) );
+
+function findShort(s){
+    var splitted = s.split(' ');
+
+    var shortestAmount = splitted[0].length;
+    var shortestWord;
+
+    for (var i = 0; i < splitted.length; i++) {
+      if(splitted[i].length < shortestAmount) {
+        shortestAmount = splitted[i].length;
+        shortestWord = splitted[i];
+      }
+    }
+
+    return shortestWord;
+}
+
+function accum(s) {
+	// your code
+  var splitted = s.split('');
+  var resArr = [];
+  var number = 0;
+  for (var i = 0; i < splitted.length; i ++) {
+    var sell = [];
+    sell.push( splitted[i].toUpperCase() );
+    for(var b = 0; b < number; b++ ) {
+      sell.push(splitted[i].toLowerCase);
+    }
+    resArr.push( sell.join('') );
+    number++;
+  }
+  return resArr.join('-');
+}
+
+
+console.log( accum("abcd") );
+
+
+function isTriangle(a,b,c) {
+  if (a+b > c && b + c > a && c + a > b) {
+    return true;
+  } else return false;
+}

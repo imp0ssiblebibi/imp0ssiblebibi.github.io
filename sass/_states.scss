@@ -10,19 +10,74 @@
 .header-nav-item a:hover {
         color: #00aaff;
 }
-.header-nav-link:hover {
-    &:after{
-        background-color: #0af;
+.header-nav-item:hover {
+  .header-nav-link {
+    color: $main-blue;
+    &:after {
+        width: 22px;
     }
+  }
+}
+.main-page {
+  .nav-main:after {
+    width: 22px;
+  }
+}
+.services-active {
+  .nav-services:after {
+    width: 22px;
+  }
+}
+.languages-active {
+  .nav-languages:after {
+    width: 22px;
+  }
+}
+.about-service-active {
+  .nav-about-service:after {
+    width: 22px;
+  }
+}
+.contacts-active {
+  .nav-contacts:after {
+    width: 22px;
+  }
+}
+.cooperation-active {
+  .nav-cooperation:after {
+    width: 22px;
+  }
+}
+.specilizations-active {
+  .nav-specializations:after {
+    width: 22px;
+  }
 }
 .dropdown-nav-btn:hover {
     background-color: $btn-hover;
 }
-.main-top-link:hover {
-    background-color: $btn-hover;
+.main-top-banner {
+  .learn-more:hover {
+      background-color: $btn-hover;
+  }
 }
 .blue-button:hover {
     background-color: #0096e0;
+}
+.can-help {
+  .item:hover {
+    .img-capt {
+      text-decoration: underline;
+      color: $main-blue;
+    }
+  }
+}
+.recent-posts {
+  .item:hover {
+    .description {
+      color: darken($main-blue, 10%);
+    }
+  }
 }
 .spec-item-main-wp:hover {
     background-color: rgba(66, 116, 230, 0.2);
@@ -42,6 +97,9 @@
 .bottom-socials > a:hover {
     color: #0af;
 }
+.up:hover {
+  background-color: lighten(#393a3b, 1%);
+}
 .contacts-item-single:hover .contacts-item {
     border-color: rgba(68, 140, 203, 0.43);
 }
@@ -54,9 +112,6 @@
 }
 .spec-arrow:hover {
     opacity: 0.8;
-}
-.have-dropdown:hover .dropdown-menu-hover {
-    display: block;
 }
 .price-table {
     tr:hover {

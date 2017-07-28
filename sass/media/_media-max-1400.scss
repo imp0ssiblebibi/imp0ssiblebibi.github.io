@@ -24,4 +24,17 @@
             }
         }
     }
+    .all-world {
+      .item {
+        font-size: 10px;
+      }
+    }
+    .have-carousel, .comments-carousel {
+      .owl-next {
+        padding-right: 5px;
+      }
+      .owl-prev {
+        padding-left: 5px;
+      }
+    }
 }

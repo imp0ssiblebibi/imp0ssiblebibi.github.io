@@ -1,8 +1,8 @@
 
     function initMap() {
-        
+
         var styledMapType = new google.maps.StyledMapType(
-            
+
         [
               {
                 "elementType": "geometry",
@@ -163,16 +163,17 @@
                 ]
               }
             // .............
-            
-        ], 
+
+        ],
             {name: 'Styled Map'});
-        
+
         var lat = 50.445195,
             lng = 30.505887;
-        
+
         var map = new google.maps.Map(document.getElementById('map'), {
           center: {lat: lat, lng: lng},
           zoom: 17,
+          disableDefaultUI: true,
           mapTypeControlOptions: {
             mapTypeIds: ['roadmap', 'satellite', 'hybrid', 'terrain',
                     'styled_map']

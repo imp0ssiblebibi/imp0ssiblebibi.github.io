@@ -5,11 +5,15 @@ html {
     font-size: 16px;
 }
 body {
+    min-width: 300px;
+    position: relative;
     margin: 0;
     padding: 0;
+    padding-top: 50px;
+    box-sizing: border-box;
     width: 100%;
-    color: #8a8c8b;
-    position: relative;
+    font: 300 14px/1 $open-sans;
+    color: #5a5c5d;
 }
 strong, b {
     font-weight: 700;
@@ -21,6 +25,10 @@ h1, h2, h3, h4, h5, h6 {
 p {
     margin-top: 0;
     margin-bottom: 32px;
+    line-height: 1.7143;
+}
+span {
+    line-height: 1.7143;
 }
 a {
     text-decoration: none;
@@ -66,4 +74,10 @@ figure {
 }
 .absolute {
     position: absolute;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
 }

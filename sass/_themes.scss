@@ -1,20 +1,31 @@
-.main-top-car-1 {
-    background: url(../img/main-top-banner-1.png) center center / cover;
-}
-.main-top-car-2 {
-    background: url('../img/main-top-banner-2.png') center center / cover;
-}
-.main-top-car-3 {
-    background: url('../img/main-top-banner-3.png') center center / cover;
-}
-.main-top-car-4 {
-    background: url('../img/main-top-banner-4.png') center center / cover;
-}
-.main-top-car-5 {
-    background: url('../img/main-top-banner-5.png') center center / cover;
+.main-top-banner {
+  .item {
+    background: #b2b2b2 $centbg;
+  }
+  .item.nth-1 {
+      background-image: url('../img/themes/main-top-banner-1.png');
+  }
+  .item.nth-2 {
+      background-image: url('../img/themes/main-top-banner-2.png');
+  }
+  .item.nth-3 {
+      background-image: url('../img/themes/main-top-banner-3.png');
+  }
+  .item.nth-4 {
+      background-image: url('../img/themes/main-top-banner-4.png');
+  }
+  .item.nth-5 {
+      background-image: url('../img/themes/main-top-banner-5.png');
+  }
+  .item.nth-6 {
+      background-image: url('../img/themes/main-top-banner-6.png');
+  }
 }
 .take-rate-sect {
     background: url('../img/take-rate.png') $centbg;
+}
+.order-translate {
+    background: url('../img/order-translate.png') $centbg;
 }
 .left-content {
     .chess-content-wp {
@@ -32,26 +43,35 @@
 .work-groups {
     background-color: #424850;
 }
-.white-left-corner {
-    background-image: url('../img/themes/bg-white-left-corner.png');
-}
 .grey-right-corner {
-    background-image: url('../img/themes/bg-grey-right-corner.png');
+  &:after {
+    background-image: url('../img/themes/grey-right-corner.png');
+  }
 }
 .grey-left-corner {
-    background-image: url('../img/themes/bg-grey-left-corner.png');
+    &:before {
+      background-image: url('../img/themes/grey-left-corner.png');
+    }
 }
 .darken-white-left-corner {
-    background-image: url('../img/themes/bg-darken-white-left-corner.png');
+  &:before {
+      background-image: url('../img/themes/darken-white-left-corner.png');
+    }
 }
 .darken-white-right-corner {
-    background-image: url('../img/themes/bg-darken-white-right-corner.png');
+  &:after {
+    background-image: url('../img/themes/darken-white-right-corner.png');
+  }
 }
 .white-right-corner {
-    background-image: url('../img/themes/bg-white-right-corner.png');
+  &:after {
+    background-image: url('../img/themes/white-right-corner.png');
+  }
 }
-.grey-left-corner {
-    background-image: url('../img/themes/bg-grey-left-corner.png');
+.white-left-corner {
+  &:before {
+    background-image: url('../img/themes/white-left-corner.png');
+  }
 }
 .darken-white {
     background-color: #f9fafa;
@@ -65,7 +85,7 @@
 .services-page .top-banner {
     background-image: url('../img/themes/servcies-banner.png')
 }
-.about-service-page .top-banner {
+.news-page .top-banner {
     background-image: url('../img/themes/about-service-banner.png');
 }
 .about-service-blog-page .top-banner {
@@ -82,6 +102,9 @@
 }
 .comments-page .top-banner {
     background-image: url(../img/themes/comments.png);
+}
+.about-service-page .top-banner {
+  background-image: url('../img/themes/about-service.png');
 }
 .answer, .leave-comment {
     background: url('../img/answer.png') $centbg;
@@ -122,5 +145,27 @@
   background-color: #f9fafa;
 }
 .cost-additional-services {
-  background: url('../img/themes/additional-service.png') $centbg;  
+  background: url('../img/themes/additional-service.png') $centbg;
+}
+.local-service-include {
+  background-color: $darken-white;
+}
+.localize-take-rate {
+  background-color: $darken-white;
+}
+.main-page {
+  .comments-carousel-sect {
+      background-color: $darken-white;
+  }
+}
+.about-service-page {
+  .comments-carousel-sect {
+    background: url('../img/themes/about-service-comments.png') $centbg;
+  }
+}
+.all-world {
+  background: url('../img/themes/all-world.png') $centbg;
+}
+.discuss-project {
+  background: url('../img/themes/discuss-project.png') $centbg ;
 }

@@ -1,19 +1,10 @@
 
 @media (max-width: 1199px) {
-    .our-advances-wp {
-        background: #fff;
+  .our-advances.left-content {
+    .chess-content-wp {
+      padding-right: 30px;
     }
-    .our-advances-left {
-        width: 100%;
-    }
-    .our-advances-main {
-        float: none;
-        max-width: 705px;
-        width: 100%;
-        margin: 0 auto;
-        padding-right: 0;
-        margin-bottom: -(55rem/16);
-    }
+  }
     .how-work-item {
         max-width: 50%;
     }
@@ -21,10 +12,7 @@
         flex-wrap: wrap;
     }
     .how-work-item-2 {
-        .how-work-item-2-1 p {
-            &:before {
-                display: none;
-            }
+        .how-work-item-2-1 .borders {
             &:after {
                 display: none;
             }
@@ -58,7 +46,7 @@
     }
     .work-groups {
         .chess-content-wp {
-            padding-right: (125rem/16);
+            padding-right: 30px;
         }
     }
     .our-advances {
@@ -67,12 +55,34 @@
         }
         .chess-content-wp {
             width: 100%;
-            padding-left: 30px;    
+            padding-left: 30px;
+            &:after, &:before {
+              display: none;
+            }
         }
         .chess-main {
             float: none;
             margin-right: auto;
             margin-left: auto;
+            padding-left: 35px;
         }
     }
+    .all-world {
+      .item {
+        font-size: 6px;
+      }
+    }
+}
+@media (min-width: 1199px) {
+  .all-world .wrapper {
+      max-width: 1370px;
+  }
+  .can-help .wrapper {
+    max-width: 1370px;
+  }
+  .prof-translate-include {
+    .wrapper {
+      max-width: 1040px;
+    }
+  }
 }

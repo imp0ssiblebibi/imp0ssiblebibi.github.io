@@ -15,22 +15,46 @@
     .chess-img-wp {
         display: none;
     }
+    .can-help {
+      .item {
+        margin: 0 auto 60px;
+      }
+    }
+    .include-block {
+      .chess-main {
+        padding-left: 0;
+      }
+      .item {
+        padding-top: 35px;
+        padding-right: 0;
+        padding-left: 0;
+        text-align: center;
+        font-size: 16px;
+        &:before {
+          right: 0;
+          margin: auto;
+        }
+        .title {
+          max-width: 100%;
+          padding-bottom: 20px;
+        }
+      }
+    }
     .chess-content-wp {
+      width: 100%;
+      &:after, &:before {
+        display: none;
+      }
     }
     .right-content {
         .chess-content-wp {
             padding: 60px 30px;
-            width: 100%;
         }
     }
     .left-content {
         .chess-content-wp {
             padding: 60px 30px;
-            width: 100%;
         }
-    }
-    .our-advances-main {
-        margin-bottom: 0;
     }
     .article-single {
         .comment-avatar-wp {
@@ -67,5 +91,8 @@
       .item {
         width: 100%;
       }
+    }
+    .answer-main {
+        max-width: (290px);
     }
 }
