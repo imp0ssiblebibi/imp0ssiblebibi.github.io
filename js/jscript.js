@@ -11,18 +11,21 @@ $(document).ready(function(){
                         [690, 2],
                         [(362 * 3 + 60), 3], ],
         navigation	: true,
-        navigationText : ['<span class="spec-arrow-left  spec-arrow" aria-hidden="true"><span>', '<span class="spec-arrow-right  spec-arrow" aria-hidden="true"></span>']
+        navigationText : ['<span class="spec-arrow-left  spec-arrow" aria-hidden="true"><span>', 
+			  '<span class="spec-arrow-right  spec-arrow" aria-hidden="true"></span>']
     });
     $(".service-carousel").owlCarousel({
         itemsCustom : [ [0, 1],
                         [600, 2] ],
         navigation	: true,
-        navigationText : ['<span class="spec-arrow-left  spec-arrow" aria-hidden="true"><span>', '<span class="spec-arrow-right  spec-arrow" aria-hidden="true"></span>']
+        navigationText : ['<span class="spec-arrow-left  spec-arrow" aria-hidden="true"><span>', 
+			  '<span class="spec-arrow-right  spec-arrow" aria-hidden="true"></span>']
     });
     $('.comments-carousel').owlCarousel({
         singleItem : true,
         navigation	: true,
-        navigationText : ['<span class="spec-arrow-left  spec-arrow" aria-hidden="true"><span>', '<span class="spec-arrow-right  spec-arrow" aria-hidden="true"></span>']
+        navigationText : ['<span class="spec-arrow-left  spec-arrow" aria-hidden="true"><span>', 
+			  '<span class="spec-arrow-right  spec-arrow" aria-hidden="true"></span>']
     });
     $('#languages-carousel').owlCarousel({
         wid : 130,
@@ -33,7 +36,8 @@ $(document).ready(function(){
                         [( (130*12) + 140 ), 12] ],
         items: 12,
         navigation	: true,
-        navigationText : ['<span class="spec-arrow-left  spec-arrow" aria-hidden="true"><span>', '<span class="spec-arrow-right  spec-arrow" aria-hidden="true"></span>']
+        navigationText : ['<span class="spec-arrow-left  spec-arrow" aria-hidden="true"><span>', 
+			  '<span class="spec-arrow-right  spec-arrow" aria-hidden="true"></span>']
     });
     var fileSelect = $(".rate-file-input");
     var rateSelect = $('select.rate-element');
