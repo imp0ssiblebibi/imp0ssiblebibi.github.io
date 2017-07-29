@@ -5767,6 +5767,7 @@ body {
   .include-block .chess-main {
     padding-left: 0; }
   .include-block .item {
+    width: 100%;
     padding-top: 35px;
     padding-right: 0;
     padding-left: 0;
