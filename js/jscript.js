@@ -4,7 +4,7 @@ $(document).ready(function(){
     });
     $("#main-top-carousel").owlCarousel({
         singleItem : true,
-        autoPlay : 3000
+        autoPlay : false
     });
     $(".spec-carousel").owlCarousel({
         itemsCustom : [ [0, 1],
